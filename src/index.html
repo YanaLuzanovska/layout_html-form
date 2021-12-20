@@ -10,7 +10,10 @@
   <body>
     Hello,world!
     <form
-     action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      onsubmit="onSubmit()"
+      >
     </form>
     <fieldset>
       <legend>Personal information:</legend>
@@ -58,100 +61,103 @@
     </fieldset>
     <fieldset>
       <legend>Registration:</legend>
-      <label for="email">E-mail:</label>
-      <input
-      type="email"
-      id="email"
-      name="E-mail"
-      placeholder="email@example.com">
-      <br><br>
-      <label for="password">Password:</label>
-      <input
-      type="password"
-      id="password"
-      name="Password"
-      >
-      <br><br>
+      <div class="form-field">
+        <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="E-mail"
+            placeholder="email@example.com"
+          >
+      </div>
+      <div class="form-field">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="Password"
+        >
+      </div>
     </fieldset>
     <fieldset>
       <legend>An interesting fact about you:</legend>
-      <label for="pet1">Do you love cats?</label>
-      <input
-      type="radio"
-      id="pet1"
-      name="cat"
-      value="Y"
-    >
-     Yes
-      <br><br>
-      <label for="pet"></label>
-      <input
-      type="radio"
-      id="pet"
-      name="cat"
-      value="N"
-    >
-     No
-      <br><br>
-      <label for="color">What is your favorite color?</label>
-      <input
-      type="color"
-      id="color"
-      name="color"
-      value="#000"
-    >
-      <br><br>
-      <label for="appt">What time do you go to bed?</label>
-      <input
-      type="time"
-      id="appt"
-      name="appt"
-      min="09:00"
-      max="18:00"
-      required
-    >
-      <br><br>
-      <label for="cars">What are your favorite brand of cars?</label>
-      <select
-      id="cars"
-      name="cars"
-      size="3">
-        <option value="bmw">BMW</option>
-        <option value="audi">Audi</option>
-        <option value="lada">Lada</option>
-      </select>
-      <br><br>
-      <label for="rate">How do you rate your work?</label>
-      <input
-      type="range"
-      id="rate"
-      name="rate"
-      min="0"
-      max="100"
-    >
-      <br><br>
+      <div class="form-field">
+        <label for="pet1">Do you love cats?</label>
+        <input
+          type="radio"
+          id="pet1"
+          name="cat"
+          value="Y"
+        >
+        Yes
+      </div>
+      <div class="form-field">
+        <label for="pet"></label>
+        <input
+          type="radio"
+          id="pet"
+          name="cat"
+          value="N"
+        >
+        No
+      </div>
+      <div class="form-field">
+        <label for="color">What is your favorite color?</label>
+        <input
+          type="color"
+          id="color"
+          name="color"
+          value="#000"
+        >
+      </div>
+      <div class="form-field">
+        <label for="appt">What time do you go to bed?</label>
+        <input
+          type="time"
+          id="appt"
+          name="appt"
+          min="09:00"
+          max="18:00"
+          required
+        >
+      </div>
+      <div class="form-field">
+        <label for="cars">What are your favorite brand of cars?</label>
+        <select id="cars" name="cars" size="3">
+          <option value="bmw">BMW</option>
+          <option value="audi">Audi</option>
+          <option value="lada">Lada</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="rate">How do you rate your work?</label>
+        <input
+          type="range"
+          id="rate"
+          name="rate"
+          min="0"
+          max="100"
+        >
+      </div>
     </fieldset>
     <fieldset>
       <legend>Additional info</legend>
-      <label for="text">Comments</label>
-      <input
-      type="text"
-      id="text"
-      name="comments"
-      >
-      <br><br>
-      <label for="select">Would you recommend us?</label>
-      <select id="select">
-        <option value="value1" selected>no</option>
-        <option value="value2" selected>yes</option>
-      </select>
-      <br><br>
+      <div class="form-field">
+        <label for="text">Comments</label>
+        <input
+          type="text"
+          id="text"
+          name="comments"
+        >
+      </div>
+      <div class="form-field">
+        <label for="select">Would you recommend us?</label>
+        <select id="select">
+          <option value="value1" selected>no</option>
+          <option value="value2" selected>yes</option>
+        </select>
+      </div>
     </fieldset>
-    <button class="button"
-     type="submit">
-     Submit
-    </button>
-</select>
-</fieldset>
+    <button class="button" type="submit">Submit</button>
   </body>
 </html>
